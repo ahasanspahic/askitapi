@@ -34,14 +34,14 @@ router.use(function(req, res, next) {
   next(); // make sure we go to the next routes and don't stop here
 });
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+/*router.get('/', function(req, res, next) {
   User.find(function(err, users) {
     if (err)
         res.send(err);
     else
       res.json(users);
   });
-});
+});*/
 /* POST create user */
 router.post('/', function(req, res, next) {
   console.log(req.headers);
